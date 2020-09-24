@@ -1,0 +1,236 @@
+.tradition {
+  
+  background-color: $primary-bg;
+  & .container {
+    padding-top: 125px;
+    padding-bottom: 145px;
+    @include for-size(desktop) {
+      padding-bottom: 246px;
+    }
+    @include for-size(desktop) {
+      padding-top: 130px;
+      padding-bottom: 310px;
+    }
+  }
+}
+
+.background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  @media screen and (max-width: 767px) {
+    background-image: url('../images/optimise-images/mobile-milk-bg.png');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (max-width: 767px) {
+    background-image: url('../images/optimise-images/mobile-milk-bg@2x.png');
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url('../images/optimise-images/desktop-milk-bg.png');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-width: 1200px) {
+    background-image: url('../images/optimise-images/desktop-milk-bg@2x.png');
+  }
+}
+
+.title-tradition {
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+.picture-tradition {
+  width: 100%;
+}
+
+.deskription-block {
+  margin-right: 30px;
+  margin-left: 30px;
+  padding-top: 46px;
+}
+
+.diskription-first {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.583;
+  color: $black-text-color;
+}
+
+.diskription-second {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.583;
+  color: $grey-text-color;
+  margin-top: 36px;
+}
+
+.diskription-third {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.583;
+  color: $grey-text-color;
+  margin-top: 20px;
+}
+
+.btn-container {
+  margin-top: 20px;
+}
+
+.tradition-btn {
+  display: block;
+  background: $white-color;
+  border-radius: 22px;
+  width: 176px;
+  height: 44px;
+  padding: 12px 10px;
+  border: none;
+}
+
+.button-icon-tradition {
+  width: 10px;
+  height: 10px;
+  fill: $cherry-text-color;
+  margin-left: 14px;
+}
+
+.text-btn-tradition {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.285;
+  color: $cherry-text-color;
+  @include for-size(tablet) {
+    font-size: 16px;
+  }
+}
+
+// .icon-tradition {
+//   margin-top: 38px;
+// }
+
+.icon-title {
+  margin-top: 25px;
+}
+
+.icon-diskription {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.667;
+  color: $black-text-color;
+  margin-top: 25px;
+}
+
+.block-information {
+  margin-right: 30px;
+}
+.container-tablet  {
+  margin-bottom: 39px;
+}
+@include for-size(tablet) {
+
+  .title-tradition {
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .container-tablet {
+    display: flex;
+    margin-bottom: 66px;
+  }
+
+  .deskription-block {
+    margin: 0;
+    margin-left: 17px;
+    padding-top: 45px;
+    width: 50%;
+  }
+
+  .diskription-first {
+    margin-right: 0;
+    font-size: 14px;
+    line-height: 1.786;
+  }
+
+  .diskription-second {
+    margin-top: 35px;
+    margin-right: 0;
+    font-size: 14px;
+    line-height: 1.786;
+  }
+
+  .diskription-third {
+    margin-top: 25px;
+    margin-right: 0;
+    font-size: 14px;
+    line-height: 1.786;
+  }
+
+  .btn-container {
+    margin-top: 62px;
+    margin-right: 0;
+  }
+  .container-information {
+    display: flex;
+    justify-content: space-between;
+  }
+  // .icon-tradition {
+  //   margin-top: 66px;
+  // }
+  .icon-title {
+    margin-top: 36px;
+  }
+  .icon-diskription {
+    margin-top: 15px;
+    margin-right: 0;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.02em;
+  }
+}
+
+@include for-size(desktop) {
+  .picture-block {
+    min-width: 516px;
+    min-height: 516px;
+  }
+  .title-tradition {
+    margin-bottom: 55px;
+  }
+
+  .deskription-block {
+   margin-left: 74px;
+   padding-top: 51px;
+  }
+
+  .diskription-first {
+    font-size: 16px;
+    line-height: 1.786;
+  }
+
+  .diskription-second {
+    margin-top: 35px;
+  }
+
+  .diskription-third {
+    margin-top: 45px;
+  }
+  .btn-container {
+    margin-top: 45px;
+  }
+  .block-information {
+    width: calc((100% - 2 * 100px) / 3);
+  }
+  .container-tablet{
+    margin-bottom: 39px;
+  }
+  .icon-title {
+    margin-top: 40px;
+  }
+}
